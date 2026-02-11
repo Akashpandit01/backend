@@ -11,18 +11,18 @@ app.use(express.json());
 
      
     let dishes=data.dishes;
-      res.json({msg:"List of courses",dishes})
+      res.json({msg:"List of dishess",dishes})
   })
 
    
 app.get("/dishes/:id",(req,res)=>{
-  // console.log(req.params)
+  
 
 
   let dishesid=req.params.id;
     let data=JSON.parse(fs.readFileSync("./data.json","utf-8"));
     let dishes=data.dishes;
-    let index=cources.findIndex((course)=>dishes.id==dishesid);
+    let index=dishes.findIndex((dishes)=>dishes.id==dishesid);
 
 
     if(index==-1){
@@ -30,7 +30,7 @@ app.get("/dishes/:id",(req,res)=>{
     }else{
       dishes.forEach((ele,id)=>{
         if(ele.id==dishesid){
-          res.status(200).json({msg:"course detatil",dishes:ele})
+          res.status(200).json({msg:"dishes detatil",dishes:ele})
         }
       })
     }
@@ -51,37 +51,37 @@ app.get("/dishes/:id",(req,res)=>{
      let dishes=data.dishes;
         let id=dishes[dishes.length-1].id+1;
         newdishes={id,...newdishes};
-    cources.push(newdishes);
+    dishes.push(newdishes);
    
     fs.writeFileSync("./data.json",JSON.stringify(data))
-    res.status(201).coursesend({msg:"New Course added",newdishes})
+    res.status(201).dishessend({msg:"New dishes added",newdishes})
   })
 
-   app.put("/update-course/:id",(req,res)=>{
+   app.put("/update-dishes/:id",(req,res)=>{
     // console.log(req.params);
 
     let id=parseInt(req.params.id);
     let updatedishes=req.body;
    let data=JSON.parse(fs.readFileSync("./data.json","utf-8"));
    let dishes=data.dishes;
-  //  console.log(cources);
+  //  console.log(dishes);
 
-  let index=cources.findIndex((dishes)=>dishes.id===id);
+  let index=dishes.findIndex((dishes)=>dishes.id===id);
   // console.log(index)
 
 
   if(index===-1){
     res.status(404).json({msg:"dishes Not Found"})
   }else{
-let updatecourses=cources.map((el,i)=>{
+let updatedishess=dishes.map((el,i)=>{
    if(el.id==id){
     return {...el,...updatedishes}
    }else{
     return el
    }
 })
-//replace with old course
-data.cources=updatedishes
+//replace with old dishes
+data.dishes=updatedishes
   //  console.log(index);
 
   fs.writeFileSync("./data.json",JSON.stringify(data));
