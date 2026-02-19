@@ -1,0 +1,7 @@
+[
+  { "_id": "C1001", "name": "Alice", "city": "New York" },
+  { "_id": "C1002", "name": "Bob", "city": "Los Angeles" },
+  { "_id": "C1003", "name": "Charlie", "city": "Chicago" },
+  { "_id": "C1004", "name": "David", "city": "Houston" },
+  { "_id": "C1005", "name": "Eve", "city": "Seattle" }
+]

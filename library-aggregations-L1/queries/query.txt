@@ -1,0 +1,18 @@
+1) Top 3 best-selling products by quantity sold
+db.orders.aggregate([
+  { $group: { _id: "$productName", totalQty: { $sum: "$quantity" } } },
+  { $sort: { totalQty: -1 } },
+  { $limit: 3 }
+])
+
+2) Total revenue per category
+db.orders.aggregate([
+  { $group: { _id: "$category", totalRevenue: { $sum: "$totalPrice" } } }
+])
+
+3) Average total price of all orders
+db.orders.aggregate([
+  { $group: { _id: null, avgOrderValue: { $avg: "$totalPrice" } } }
+])
+
+// ...continue for all tasks

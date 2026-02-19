@@ -1,0 +1,21 @@
+[
+  {
+    "username": "alice",
+    "productName": "iPhone 14",
+    "category": "Electronics",
+    "quantity": 2,
+    "totalPrice": 2000,
+    "orderDate": "2024-11-12T10:30:00Z",
+    "status": "Delivered"
+  },
+  {
+    "username": "bob",
+    "productName": "T-shirt",
+    "category": "Clothing",
+    "quantity": 5,
+    "totalPrice": 100,
+    "orderDate": "2024-11-15T13:45:00Z",
+    "status": "Delivered"
+  }
+  
+]
