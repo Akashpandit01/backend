@@ -17,5 +17,13 @@
   "bugs": {
     "url": "https://github.com/Akashpandit01/backend/issues"
   },
-  "homepage": "https://github.com/Akashpandit01/backend#readme"
+  "homepage": "https://github.com/Akashpandit01/backend#readme",
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "node-cron": "^4.2.1",
+    "nodemailer": "^8.0.1",
+    "pdfkit": "^0.17.2",
+    "redis": "^5.11.0"
+  }
 }
