@@ -1,0 +1,35 @@
+```
+
+1. What is Artificial Intelligence (AI)?
+Artificial Intelligence (AI) refers to computer systems designed to perform tasks that typically require human intelligence,
+ such as learning, reasoning, problem-solving, perception, and decision-making. AI encompasses technologies like machine learning,
+ natural language processing, and computer vision to enable machines to mimic cognitive functions.
+
+2. What are Large Language Models (LLMs)? How do they work?
+Large Language Models (LLMs) are advanced AI systems trained on massive datasets of text to understand and generate human-like language.
+ They work using transformer architectures with billions of parameters, 
+processing input through self-attention mechanisms to predict the next word or token based on context. 
+Training involves unsupervised learning on internet-scale data, followed by fine-tuning for specific tasks.
+
+3. What is the difference between Traditional AI and Generative AI?
+Traditional AI focuses on rule-based systems, symbolic reasoning,
+ and task-specific algorithms like expert systems or decision trees for narrow,
+ predefined problems. Generative AI, a subset powered by deep learning models like LLMs or diffusion models, creates new content such as text, images, 
+or code from learned patterns, emphasizing creativity and open-ended outputs rather than strict rule-following.
+
+4. Explain the concept of "prompting" in the context of LLMs. Why is it important?
+Prompting is crafting specific input text to guide an LLM's response, acting as instructions or examples to elicit desired outputs without retraining the model. 
+It is important because it leverages the model's pre-trained knowledge efficiently, enables zero-shot or few-shot learning, and directly impacts accuracy, 
+relevance, and creativity—poor prompts yield vague results, while effective ones unlock precise, context-aware generations.
+
+5. What is the role of "tokens" in a language model, and how do they impact the output?
+Tokens are the basic units of text (subwords, words, or characters) that LLMs process,
+ converting input/output into numerical sequences via tokenizers. 
+They impact output by defining context length limits (e.g., 128k tokens), influencing coherence in long responses, 
+and affecting costs/computation—exceeding limits truncates text, while token choices shape fluency and precision.
+
+6. What are some limitations or risks of using Generative AI models like ChatGPT?
+Limitations include hallucinations (fabricating facts), bias from training data, lack of true understanding or reasoning, 
+and context forgetting in long interactions. Risks involve misinformation spread, privacy breaches from data exposure,
+ over-reliance reducing critical thinking, ethical concerns like job displacement, and potential misuse for phishing, deepfakes, or amplifying harmful stereotypes.
+```
